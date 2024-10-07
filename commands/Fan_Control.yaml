@@ -63,6 +63,9 @@
         - " "
 - testcase: "[TC-FAN-3.1] Mandatory functionality with DUT as Server"
   commands:
+    - command: "./chip-tool fancontrol read fan-mode 1 1"
+      logs:
+        - " "
     - command: "./chip-tool fancontrol write fan-mode 3 1 1"
       logs:
         - " "
