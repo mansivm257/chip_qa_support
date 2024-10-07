@@ -72,6 +72,9 @@
     - command: "./chip-tool fancontrol read fan-mode 1 1"
       logs:
         - " "
+    - command: "./chip-tool fancontrol read percent-setting 1 1"
+      logs:
+        - " "
     - command: "./chip-tool fancontrol write fan-mode 0 1 1"
       logs:
         - " "
@@ -81,13 +84,22 @@
     - command: "./chip-tool fancontrol read percent-current 1 1"
       logs:
         - " "
+    - command: "./chip-tool fancontrol read percent-setting 1 1"
+      logs:
+        - " "
     - command: "./chip-tool fancontrol write percent-setting 25 1 1"
+      logs:
+        - " "
+    - command: "./chip-tool fancontrol read percent-setting 1 1"
       logs:
         - " "
     - command: "./chip-tool fancontrol read percent-current 1 1"
       logs:
         - " "
     - command: "./chip-tool fancontrol read percent-setting 1 1"
+      logs:
+        - " "
+    - command: "./chip-tool fancontrol read fan-mode 1 1"
       logs:
         - " "
     - command: "./chip-tool fancontrol write percent-setting 0 1 1"
@@ -98,6 +110,9 @@
         - " "
 - testcase: "[TC-FAN-3.2] Optional speed functionality with DUT as Server"
   commands:
+    - command: "./chip-tool fancontrol read speed-setting 1 1"
+      logs:
+        - " "
     - command: "./chip-tool fancontrol read speed-max 1 1"
       logs:
         - " "
